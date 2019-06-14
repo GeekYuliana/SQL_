@@ -35,3 +35,10 @@ SELECT 'found' AS search_result ELSE SELECT 'not found' AS search_result;
 
 SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS
    WHERE TABLE_NAME = 'yourviewname'
+
+/*View definitions are stored in INFORMATION_SCHEMA table.*/
+SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'viewnamehere'
+
+/*if you have created a view 'xyz' and after some time you have modified this view then this above query will show both query that was used to create view and query to modify view.*/
+/*If you want just latest view query then you can simply run*/
+SHOW CREATE VIEW 'viewnamehere'
