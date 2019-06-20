@@ -4,3 +4,13 @@ WITH temporaryTable (averageValue) as
     SELECT Attr1
     FROM Table
     WHERE Table.Attr1 > temporaryTable.averageValue;
+    
+  Common table expression (CTE) can be used in Teradata for recrusive queries. 
+  
+    with CTE_name (column_list) as 
+    (
+    Select column list from table [where condition] 
+    ) select * from cte_name;
+
+
+multiple with clauses are not allowed in Teradata
