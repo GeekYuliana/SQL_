@@ -1,0 +1,3 @@
+OLAP 
+OLAP functions are similar to aggregate functions except that aggregate functions will return onlu one, whereas the OLAP function will provide the individual 
+rows in addition to the aggregate. 
