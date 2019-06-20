@@ -1,0 +1,6 @@
+Quite often it is needed to retrieve information regarding views 
+This is the query to use to retrieve information regaring the query:
+
+Select view_name, text
+from user_views;
+
