@@ -14,3 +14,8 @@ WITH temporaryTable (averageValue) as
 
 
 multiple with clauses are not allowed in Teradata
+
+Syntax 
+<aggregate function> over ([partition by] [order by columnname][rows between unbounded proceding and unbounded following])
+Example
+select EmployeeNo, NetPay, Sum(NetPay) over (oreder by Employee No Rows Unbounded Proceding) as total Salary) from salary
